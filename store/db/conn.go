@@ -22,7 +22,7 @@ func Connect(driver string, datasource string, migrations ...Migration) (*DB, er
 	if err := pingDatabase(db); err != nil {
 		return nil, err
 	}
-	if err := setupDatabase(db, driver); err != nil {
+	if err := setupDatabase(db, driver, migrations...); err != nil {
 		return nil, err
 	}
 
