@@ -10,6 +10,7 @@ includes:
 - `pagination`
 - `randomid`
 - `realip`
+- `server` http(s) server wrapper with autocert support
 - `store`
     - `db`
     - `storebase`
